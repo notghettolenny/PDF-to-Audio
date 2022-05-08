@@ -14,7 +14,6 @@ root.withdraw()
 # Specify file type (PDF file type)
 root.filename = filedialog.askopenfilename(initialdir="/", title="Select file", filetypes=(("pdf files", "*.pdf"), ("all files", "*.*")))
 print(root.filename)
-#pdfFile = root.filename
 
 # Assign the selected PDF file to the variable, book
 book = open(str(root.filename), 'rb')
@@ -32,7 +31,7 @@ print('The PDF you selected is {} pages long.'.format(totalPages))
 
 speaker = pyttsx3.init()
 
-# Assign bPage page number of .pdf you want to read
+# Assign Page page number of .pdf you want to read
 print('Please enter the page number would you like the reader to begin reading from: ')
 whatPage = input()
 inputPage = int(whatPage) - 1
